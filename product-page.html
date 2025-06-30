@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <link rel="stylesheet" href="productpage.css">
+
+     <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<div class="banner">
+  <!-- <input type="radio" id="cross"> -->
+  <header>
+    <p>
+      MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW
+      <!-- <label for="cross" class="close-button">×</label> -->
+    </p>
+  </header>
+</div>
+
+   
+<nav class="navbar navbar-expand-lg bg-dark ">
+  <div class="container-fluid justify-content-end">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Wish List</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+          My Account
+        </a>
+        <ul class="dropdown-menu ">
+          <li><a class="dropdown-item" href="#">Sign in</a></li>
+          <li><a class="dropdown-item" href="#">Register</a></li>
+          <li><a class="dropdown-item" href="#">Cart</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Checkout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+        
+    
+    
+
+    <div class="subheader">
+    Browse category with dropdown, Search, Signin/Register, Cart
+    </div>
+    <hr/>
+    <!-- Home->Bookname -->
+    <div class="home-bookname">
+      <a href="#">Home</a>
+      <span class="separator">></span>
+      <a id="book-name" href="#">Kite Runner</a>
+    </div>
+
+
+
+    <!-- Bookimage,bookdetails,add to cart button buy now -->
+    <section class="product-container">
+      <div class="book-front-image">
+            <img src="./images/kiterunner.png" alt="book front image" class="shadow-img">
+        </div>
+        
+        <div class="book-details">
+            <h2>Kite Runner</h2>
+            <div class="availability">
+              <p>Brand: <span class="colored" id>Amarzona</span></p>
+              <p>Availability: <span class="colored" >In Stock</span></p>
+              <p>Product Id: <span class="colored">123</span></p>
+            </div>
+             <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+             <div class="summary">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum accusantium sit totam expedita perferendis voluptatum modi? Natus, dignissimos ullam et, dolor omnis ducimus aliquid voluptatibus illum, vero fuga iure!</p>
+              
+              <div class="cover-type">
+                <input type="radio" name="cover-type" id="hard" value="hard" checked>
+                <label for="hard">HARD</label>
+                <input type="radio" name="cover-type" id="soft" value="soft">
+                <label for="soft">SOFT</label>
+                <input type="radio" name="cover-type" id="audio" value="audio">
+                <label for="audio">AUDIO</label>
+              </div>
+
+              <div class="add-to-cart-buy-now">
+                <p>Qty: <span class="quantity">1</span>
+                    <button>+ Add to Cart</button>  
+                    <button>+ Buy now</button>
+                 </p> 
+                
+              </div>
+              <div class="wishlist">
+                <a href="#"">Add to wishlist</a>
+              </div>
+             </div>
+
+        </div> 
+        
+         <div class="book-side-images">
+          <h1>side</h1>
+         </div>
+
+    </section>
+
+
+
+    <section class="description-review">
+
+      <input type="radio" id="description" name="tab" checked>
+      <input type="radio" id="review" name="tab">
+
+      <div class="tab-heading">
+          <label for="description"><h4>DESCRIPTION</h4></label>  
+          
+          <label for="review"><h4>REVIEW</h4></label> 
+      </div>
+
+
+      <div class="dr-tab-contents" id="description-content">
+        The Kite Runner by Khaled Hosseini is a powerful story of friendship, betrayal, and redemption set against the backdrop of a changing Afghanistan. It follows Amir, a privileged boy from Kabul, and his loyal friend Hassan, the son of his father's servant. After a heartbreaking betrayal, Amir grapples with guilt and seeks redemption years later when he returns to Taliban-ruled Afghanistan. The novel explores themes of loyalty, honor, and the heavy cost of personal choices. Deeply emotional and vividly written, *The Kite Runner* offers a poignant portrayal of human flaws and the enduring hope for forgiveness and healing.
+
+      </div>
+
+      <div class="dr-tab-contents" id="review-content">
+        <h5>Customer Reviews</h5>
+        <p>Based on 2 reviews<span><a href="#"> Write a review</a></span></p>
+      </div>
+
+ 
+
+
+    </section>
+   
+    
+
+
+<section class="related-products">
+    <h4>RELATED PRODUCTS</h4>
+    <div class="book-list">
+
+    
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover">
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover" >
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover">
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover">
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+    
+
+    </div>
+  </section>
+
+
+
+ <section class="recently-viewed">
+    <h4>RECENTLY VIEWED PRODUCTS</h4>
+    <div class="book-list">
+
+    
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover" >
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover">
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover">
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+      <div class="book-card">
+        <p class="store">Amazona</p>
+        <p class="title">Kite Runner - Khaled Hosseini</p>
+        <img src="images/kiterunner.png" alt="Book Cover" >
+        <p class="price"><span class="new">$9.99</span> <span class="old">$19.99</span></p>
+      </div>
+
+    
+
+    </div>
+  </section>
+
+
+<footer class="footer">
+  <div class="footer-section logo">
+    <img src="./images/logoblack.png" alt="logo" width="200" />
+  </div>
+
+  <div class="footer-section">
+    <h6>SUPPORT</h6>
+    <ul>
+      <li><a href="#">Order Track</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Help Desk</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h6>POLICIES</h6>
+    <ul>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Refund Policy</a></li>
+      <li><a href="#">Exchange Policy</a></li>
+    </ul>
+  </div>
+
+ <div class="footer-section community">
+  <h6 id="reading-community">JOIN OUR READING COMMUNITY</h6>
+  <div class="community-input-column">
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </div>
+</div>
+
+
+
+</footer>
+
+</body>
+</html>

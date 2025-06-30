@@ -1,0 +1,91 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px 20px;
+  background-color: black;
+  color: #9a9a18;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  height: 250px;
+  align-items: center;
+  width: 100%;
+}
+
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #9a9a18;
+  margin-left: 25px;
+}
+
+.footer-section ul {
+  list-style: none;
+  
+}
+
+.footer-section ul li {
+  padding: 2px;
+  
+}
+
+.footer-section ul li a {
+  color: #9a9a18;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #dede69;
+}
+
+.footer .logo {
+  text-align: center;
+}
+
+
+
+.footer .community input {
+  width: 80%;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+}
+
+.community-input-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px; 
+}
+
+.community-input-column input,
+.community-input-column button {
+  
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.community-input-column button {
+  background-color: #9a9a18;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  width:86%;
+}
+
+.community-input-column button:hover {
+  background-color: #baba2a;
+}
+
+.community #reading-community{
+  text-align: left;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+
