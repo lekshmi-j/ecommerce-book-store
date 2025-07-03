@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+</head>
+
+<body>
+    <div class="checkout-page">
+        <div class="title-bar">
+            <span>SmartBook - eBooks , Bookstore Shopify Theme</span>
+            <img class="shop-bag-icon" src="images/shopping-bag.png" alt="shop" />
+        </div>
+
+        <div class="checkout-container">
+            <div class="order-details">
+
+            </div>
+
+            <div class="payment-container">
+                <div class="payment">
+                    <h6>Express checkout</h6>
+                    <button class="btn"><span class="pay">Pay</span><span class="pal">Pal</span></button>
+                    <div class="division">
+                        <hr>
+                        OR
+                        <hr>
+                    </div>
+                    <div class="contact-container">
+                        <div class="contact-names">
+                            <span class="contact-title">Contact</span>
+                            <a class="login" href="#">Log in</a>
+                        </div>
+                        <input class="contact-input" type="email" name="contact" placeholder="Email or mobile number" id="contact">
+                        <input type="checkbox" name="mail" id="mail">
+                        Email me with news and offers
+                    </div>
+                    <div class="delivery-container">
+                        <div class="contact-title">
+                            Delivery
+                        </div>
+                        <select class="dropdown" name="dropdown" id="country">
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="India">China</option>
+                            <option value="India">Russia</option>
+                            <option value="India">Dubai</option>
+                            <option value="India">France</option>
+                        </select>
+                        <div class="names-container">
+                            <input class="name" placeholder="First name" type="text" name="first" id="first">
+                            <input class="name" placeholder="Last name" type="text" name="last" id="last">
+                        </div>
+                        <div class="address">
+                            <input class="del-address" placeholder="Address" type="text" name="address" id="address">
+                        </div>
+                        <div class="address">
+                            <input class="del-address" placeholder="Apartment,suite etc" type="text" name="address" id="address">
+                        </div>
+                        <div class="address">
+                            <input class="add-blocks" type="text" name="city" placeholder="City" id="city">
+                            <select class="add-blocks" name="state" id="">
+                                <option value="AP">Andhra Pradesh</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="MP">Madhya Pradesh</option>
+                            </select>
+                            <input class="add-blocks" type="text" name="pin" placeholder="PIN code" id="pin">
+                        </div>
+                        <input class="save-info" type="checkbox" name="save-info" id=""> Save this information for next time
+                    </div>
+                    <div class="shipping-method-container">
+                        <span class="shipping-title">Shipping method</span>
+                        <div class="shipping-methods">
+                            Enter your shipping address to view available shipping methods
+                        </div>
+                    </div>
+                    <div class="payment-details">
+                        <span class="contact-title">Payment</span>
+                        <p style="color: rgb(146, 146, 146);">All transactions are secure and encrypted</p>
+                        <div class="payment-card">
+                            <div class="card-flex">
+                                <span>PayPal</span>
+                                <div><span class="pay">Pay</span><span class="pal">Pal</span></div>
+                            </div>
+                            <img class="pay-img" src="images/image.png" alt="">
+                            <p class="text">After clicking "Pay with PayPal", you will be redirected to PayPal to complete your purchase securely.</p>
+                        </div>
+                    </div>
+                    <div class="billing-address">
+                        <span class="shipping-title">Billing address</span>
+                        <div class="radio-container">
+                            <div class="radio-1"><input type="radio" name="ship-add" id="same"><label for="same">Same as shipping address</label></div>
+                            <div class="radio-2"><input type="radio" name="ship-add" id="diff"><label for="diff">Use a different billing address</label></div>
+                        </div>
+                    </div>
+                    <button class="btn-2" style="color: white;">Pay with <span class="pay" style="color: white;">Pay</span><span class="pal" style="color: white;">Pal</span></button>
+                    <br>
+                    <br>
+                    <hr style="width: 100%;">
+                    <p class="text">All rights reserved SmartBook - eBooks , Bookstore Shopify Theme</p>
+                </div>
+            </div>
+
+
+<!-- Order Summary -->
+
+            <div class="order-summary-container">
+                <div class="order-summary">
+                    <div class="order-amount">
+                        <div class="order-list">
+                            <div class="book-desc">
+                                <img class="book-image" src="images/book1.jpg" alt="" />
+                                <div class="book-details">
+                                    <span class="book-name">De Vengeance-J.D Kurtness</span>
+                                    <span class="book-type">Hard</span>
+                                </div>
+                            </div>
+                            <span class="order_price">$18.99</span>
+                        </div>
+
+                        <div class="subtotal">
+                            <span>Subtotal</span>
+                            <span>$18.99</span>
+                        </div>
+
+                        <div class="shipping">
+                            <span>Shipping</span>
+                            <span class="shipping-address">Enter shipping address</span>
+                        </div>
+
+                        <div class="total">
+                            <span class="amt">Total</span>
+                            <span class="amt"><span class="currency">USD</span>$18.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
