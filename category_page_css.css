@@ -931,12 +931,129 @@ a .navbar .dropdown-toggle:focus {
     background-color: #e4b730;
     color: white;
 }
-
-.header-container,.sidenav  {
-    max-width: 1200px;
-    margin:0 auto;
+.navbar{
+justify-content: center;
 }
-.navbar-nav{
+.sidenav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-nav {
     align-items: center;
     justify-content: flex-end;
+}
+
+.subacc {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    padding-top: 0;
+}
+
+.subcontain {
+    display: block;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    min-width: 500px;
+    max-height: 300px;
+    padding: 40px;
+}
+#container2{
+    max-width: 1200px;
+}
+.signin {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    min-width: 40%;
+    min-height: 400px;
+    padding: 40px;
+    justify-content: space-between;
+}
+.form1 input{
+    margin-bottom: 20px;
+}
+.sub {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1000px;
+}
+.sub button,.form2 button{
+    background-color: #e4b730;;
+    color: white;
+}
+.sub button:hover,.form2 button:hover{
+    background-color: gray;
+    color: white;
+}
+.form2 {
+  padding: 50px;
+  font-size: 14px;
+  display: block;
+  align-items: center;
+  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  flex: 1;
+}
+
+.form-group input {
+  flex: 2;
+  padding: 6px;
+  width: 100%;
+  font-size: 14px;
+}
+.container3{
+    min-width: 800px;
+    gap: 30px;
+}
+.container3 h1{
+    padding-bottom: 30px;
+}
+.container3 h3{
+    padding-bottom: 20px;
+    border-bottom: 2px solid gray;
+}
+.form-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-button-wrapper button {
+  padding: 10px 30px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.phone-input-group {
+  display: flex;
+  gap: 10px;
+  flex: 2;
+}
+
+.phone-input-group .code {
+  width: 60px;
+  flex: 0 0 auto;
 }
