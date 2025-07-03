@@ -2,28 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign-in Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign-in Page</title>
+  <script>
+    check =
+      () => {
+        'use strict'
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="category_page_css.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+
+      }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="category_page_css.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="wrapper" id="wrapper">
-        <input type="radio" id="cls" hidden>
-        <div class="header1">
-            <div class="banner">
-                <p>MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW</p>
-                <div class="close-button">
-                    <label class="close-btn" for="cls">x</label>
-                </div>
-            </div>
+  <div class="wrapper" id="wrapper">
+    <input type="radio" id="cls" hidden>
+    <div class="header1">
+      <div class="banner">
+        <p>MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW</p>
+        <div class="close-button">
+          <label class="close-btn" for="cls">x</label>
         </div>
+      </div>
+    </div>
 
     <header>
 
@@ -35,7 +56,7 @@
 
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                   <li class="nav-item">
+                  <li class="nav-item">
                     <a class="nav-link text-white" href="homepage.html">
                       <i class="fa-solid fa-house"></i> Home
                     </a>
@@ -152,87 +173,90 @@
         </div>
       </div>
     </header>
-        <main>
-            <div id="container2">
-                <div class="subacc">
-                    <h1>Account <i class="bi bi-person-fill"></i></h1>
-                    <div class="sub">
-                        <div class="subcontain">
-                            <h2>New Customer </h2>
-                            <strong>Register Account</strong>
-                            <p>By creating an account you will be able to shop faster, be up to date on an order's
-                                status, and keep track of the orders you have previously made.</p>
-                            <button class="btn btn-light" ><a href="register.html">Continue <i
-                                    class="bi bi-arrow-right"></i></a></button>
-                        </div>
-                        <div class="signin">
-                            <h2>Returning Customer</h2>
-                            <strong>I am a returning customer</strong>
-                            <form action="" class="form1">
-                                <label for="email">Email </label>
-                                <input type="text" class="form-control" id="email" placeholder="Email">
-                                <label for="email">Password </label>
-                                <input type="text" class="form-control" id="place" placeholder="Password">
-                                <p><a href="">forgot your password?</a></p>
-                                <button class="btn btn-light" ><a href="signin.html">Sign In <i
-                                        class="bi bi-key-fill"></i></a></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
+    <main>
+      <div id="container2">
+        <div class="subacc">
+          <h1>Account <i class="bi bi-person-fill"></i></h1>
+          <div class="sub">
+            <div class="subcontain">
+              <h2>New Customer </h2>
+              <strong>Register Account</strong>
+              <p>By creating an account you will be able to shop faster, be up to date on an order's
+                status, and keep track of the orders you have previously made.</p>
+              <button class="btn btn-light"><a href="register.html">Continue <i
+                    class="bi bi-arrow-right"></i></a></button>
             </div>
-
-
-    </div>
-    </main>
-
-    <footer>
-        <div class="footer">
-
-            <div class="footer-section logo">
-                <img src="images/log-dark.jpg" alt="logo" width="200" />
+            <div class="signin">
+              <h2>Returning Customer</h2>
+              <strong>I am a returning customer</strong>
+              <form action="" method="post" class="needs-validation" novalidate>
+                <label for="email">Email </label>
+                <input type="text" class="form-control" id="email" placeholder="Email" max="50" min="1" required>
+                <div class="valid-feedback">Correct!</div>
+                <div class="invalid-feedback">This is compulsory entry email</div>
+                <label for="email">Password </label>
+                <input type="text" class="form-control" id="place" placeholder="Password" max="50" min="1" required>
+                <div class="valid-feedback">Correct!</div>
+                <div class="invalid-feedback">This is compulsory entry password</div>
+                <p><a href="">forgot your password?</a></p>
+                <button type="" value="submit" class="btn btn-light" onclick="(check())">Submit form</button>
+              </form>
             </div>
-
-            <div class="footer-section">
-                <h4>SUPPORT</h4>
-                <ul>
-                    <li><a href="#">Order Track</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help Desk</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h4>POLICIES</h4>
-                <ul>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Refund Policy</a></li>
-                    <li><a href="#">Exchange Policy</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section community">
-                <h4 id="reading-community">JOIN OUR READING COMMUNITY</h4>
-                <div class="community-input-column">
-                    <input type="email" placeholder="Enter your email" />
-                    <button>Subscribe</button>
-                    <div class="stay connect d-flex">
-                        STAY CONNECTED
-                    </div>
-                    <div class="social-media">
-                        <a href="#" class="instagram" data-tooltip="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="facebook" data-tooltip="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="twitter" data-tooltip="Twitter"><i class="bi bi-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </footer>
+
+      </div>
+
+
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+
+      <div class="footer-section logo">
+        <img src="images/log-dark.jpg" alt="logo" width="200" />
+      </div>
+
+      <div class="footer-section">
+        <h4>SUPPORT</h4>
+        <ul>
+          <li><a href="#">Order Track</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help Desk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>POLICIES</h4>
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Exchange Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section community">
+        <h4 id="reading-community">JOIN OUR READING COMMUNITY</h4>
+        <div class="community-input-column">
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+          <div class="stay connect d-flex">
+            STAY CONNECTED
+          </div>
+          <div class="social-media">
+            <a href="#" class="instagram" data-tooltip="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="facebook" data-tooltip="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="twitter" data-tooltip="Twitter"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </footer>
+  </div>
 </body>
 
 </html>
