@@ -13,21 +13,16 @@
          <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <header>
-    <div class="banner">
-    <p>
-      MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW
-      <!-- <label for="cross" class="close-button">×</label> -->
-    </p>
-    </div>
-  </header>
+   
+<!-- Sale Banner -->
+<header>
+  <div class="banner">
+    <p>MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW</p>
+  </div>
+</header>
 
-
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg bg-dark">
-<!-- 
-  <div class="nav-logo">
-    <img src="./images/logoblack.png" alt="" height="50px" width="50px">
-  </div> -->
   <div class="container-fluid justify-content-end">
     
     <!-- Hamburger Button -->
@@ -38,133 +33,135 @@
    
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link text-white" href="homepage.html">
+              <i class="fa-solid fa-house"></i> Home
+          </a>
+        </li>
+        <!-- Wishlist -->
         <li class="nav-item">
           <a class="nav-link text-white" href="#">
             <i class="bi bi-heart-fill"></i> Wish List
           </a>
         </li>
-
+        <!-- Account -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
             <i class="bi bi-person-fill"></i> My Account
           </a>
+          <!-- Account dropdown -->
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"> Sign in</a></li>
-            <li><a class="dropdown-item" href="#"> Register</a></li>
+            <li><a class="dropdown-item" href="signin.html"> Sign in</a></li>
+            <li><a class="dropdown-item" href="register.html"> Register</a></li>
             <li><a class="dropdown-item" href="#"> My Orders</a></li>
           </ul>
         </li>
-
+        <!-- Contact -->
         <li class="nav-item">
           <a class="nav-link text-white" href="#">
             <i class="bi bi-telephone-fill"></i> Contact
           </a>
         </li>
-
+        <!-- Checkout -->
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">
+          <a class="nav-link text-white" href="checkout.html">
             <i class="bi bi-cart-check"></i> Checkout
           </a>
         </li>
       </ul>
-    </div>
-    
+    </div>  
   </div>
 </nav>
   
-
-    <div class="subheader">
-
-      <div class="logo">
-        <a href="#"><img src="./images/logo.png" alt="logo" width="100px" height="100px"></a>
-      </div>
-
-      <div class="browse-category">
-        <div class="dropdown">
-          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-list"></i> Browse Category
-            </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Art & Photography</a></li>
-            <li><a class="dropdown-item" href="#">Biography</a></li>
-            <li><a class="dropdown-item" href="#">Business & Money</a></li>
-            <li><a class="dropdown-item" href="#">Children's Books</a></li>
-            <li><a class="dropdown-item" href="#">Comics</a></li>
-            <li><a class="dropdown-item" href="#">Cookbooks</a></li>
-            <li><a class="dropdown-item" href="#">+ More Categories</a></li>
-          </ul>
-  </div>
+<!-- Subheader -->
+<div class="subheader">
+  <!-- Logo -->
+  <div class="logo">
+    <a href="homepage.html"><img src="./images/logoreduced.jpg" alt="logo" width="120px" height="120px"></a>
   </div>
 
-<div class="search-bar">
-  <input type="text" placeholder="Search here...">
-  <button type="submit">Search</button>
-</div>
+  <!-- Browsw Category -->
+  <div class="browse-category">
+    <div class="dropdown">
+      <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-list"></i> Browse Category
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="categorypage.html">Art & Photography</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Biography</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Business & Money</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Children's Books</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Comics</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Cookbooks</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">+ More Categories</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search here...">
+    <button type="submit">Search</button>
+  </div>
+  <!-- Sign in Register Link -->
+  <div class="sign-in">
+    <div class="sign-in-register">
+      <a id="sign-in-link" href="signin.html">Sign in</a>
+      <p>or <a id="register-link" href="register.html">Register</a></p>
+    </div>
+  </div>
 
-      <div class="sign-in">
-        <div class="sign-in-register">
-          <a id="sign-in-link" href="#">Sign in</a>
-          <p>or <a id="register-link" href="#">Register</a></p>
+  <!-- Shopping Cart -->
+  <div class="cart">
+    <div class="cart-container">
+      <button class="cart-button" >
+        <i class="bi bi-cart-fill"></i>Shopping <br> Cart <span class="badge bg-danger"> 2 </span>
+      </button>
+
+      <!-- Cart Popup -->
+      <div class="cart-popup">
+
+        <!-- Item-1 -->
+        <input type="checkbox" id="hide1" hidden>
+        <div class="item-in-cart" id="item-1">
+          <div class="cart-item-image">
+            <img src="./images/millionlittle.png" alt="" height="100%" width="120%">
+          </div>
+            
+          <div class="cart-item-details">
+            <p>A Million Little Pieces</p>
+            <p>x1<span class="price">$9.99</span></p>
+          </div>
+
+          <div class="close-button">
+            <label class="close-btn" for="hide1">x</label>
+          </div>
         </div>
-      </div>
 
-    <div class="cart">
-      <div class="cart-container">
-        <!-- Cart Icon/Button -->
-        <button class="cart-button" >
-         <i class="bi bi-cart-fill"></i>
-          Shopping <br> Cart <span class="badge bg-danger"> 2 </span>
-        </button>
-
-        <!-- Cart Popup -->
-        <div class="cart-popup">
-
-          <input type="checkbox" id="hide1" hidden>
-          <div class="item-in-cart" id="item-1">
-            <div class="cart-item-image">
-              <img src="./images/millionlittle.png" alt="" height="100%" width="120%">
-            </div>
-              
-            <div class="cart-item-details">
-              <p>A Million Little Pieces</p>
-              <p>x1<span class="price">$9.99</span></p>
-            </div>
-
-            <div class="close-button">
-              <label class="close-btn" for="hide1">x</label>
-            </div>
+        <!-- Item-2 -->
+        <input type="checkbox" id="hide2" hidden>
+        <div class="item-in-cart" id="item-2">
+          <div class="cart-item-image">
+            <img src="./images/kiterunner.png" alt="" height="100%" width="120%">
+          </div>
+            
+          <div class="cart-item-details">
+            <p>Kite Runner</p>
+            <p>x1<span class="price">$9.99</span></p>
           </div>
 
-
-         
-          <input type="checkbox" id="hide2" hidden>
-          <div class="item-in-cart" id="item-2">
-            <div class="cart-item-image">
-              <img src="./images/kiterunner.png" alt="" height="100%" width="120%">
-            </div>
-              
-            <div class="cart-item-details">
-              <p>Kite Runner</p>
-              <p>x1<span class="price">$9.99</span></p>
-            </div>
-
-            <div class="close-button">
-              <label class="close-btn" for="hide2">x</label>
-            </div>
+          <div class="close-button">
+            <label class="close-btn" for="hide2">x</label>
           </div>
-
-         
-         
-
-          <div class="item-in-cart" id="item-buttons">
-            <button id="view-cart">View Cart</button>
-            <button id="checkout">Check Out</button>
-          </div>
-          
+        </div>
+        <!-- Checkou Button in Cart Popup -->
+        <div class="item-in-cart" id="item-buttons">
+          <a href="cartpage.html"><button id="view-cart">View Cart</button></a>
+          <a href="checkout.html"><button id="checkout">Check Out</button></a>
         </div>
       </div>
     </div>
   </div>
-
+</div>
 </body>
 </html>
