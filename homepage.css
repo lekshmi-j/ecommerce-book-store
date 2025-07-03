@@ -110,14 +110,14 @@ hr {
   margin: auto;
 }
 
-.action-links{
+.action-links-1{
     display: none;
     position: relative;
     bottom: 100px;
 }
 
 
-.tooltip {
+.tooltip-1 {
   position: absolute;
   bottom: 125%; 
   left: 50%;
@@ -132,7 +132,7 @@ hr {
   z-index: 10;
 }
 
-.btns:hover .tooltip {
+.btns:hover .tooltip-1 {
   visibility: visible;
   opacity: 1;
 }
@@ -144,7 +144,7 @@ hr {
     font-size: small;
 }
 
-.tooltip{
+.tooltip-1{
     /* display: none; */
     position: absolute;
     background-color: black;
@@ -155,7 +155,7 @@ hr {
 }
 
 
-.image-container:hover .action-links{
+.image-container:hover .action-links-1{
     display: block;
 }
 
