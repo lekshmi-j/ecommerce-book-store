@@ -159,6 +159,10 @@ hr {
     display: block;
 }
 
+.book:hover{
+    cursor: pointer;
+}
+
 .book-list {
   display: flex;
   justify-content: center;
