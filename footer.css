@@ -1,25 +1,28 @@
+ /* footer */
+
 .footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   gap: 30px;
-  padding: 20px 20px;
+  padding: 50px 20px;
   background-color: black;
   color: #e4b730;
-  text-align: center;
   font-family: Arial, sans-serif;
   font-size: 15px;
   height: 250px;
-  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
-
-.footer-section h4 {
-  margin-bottom: 10px;
-  text-align: center;
-  color: #e4b730;
-  margin-left: 25px;
+.footer-section{
+  flex:1;
+  display: flex;
+  flex-direction: column;
 }
+
+.footer-section h6{
+  margin-left:25px;
+}
+
 
 .footer-section ul {
   list-style: none;
@@ -28,7 +31,8 @@
 
 .footer-section ul li {
   padding: 2px;
-  
+ 
+
 }
 
 .footer-section ul li a {
@@ -37,27 +41,38 @@
 }
 
 .footer-section a:hover {
-  color: #e4b730;
+  color: #dede69;
 }
 
-.footer .logo {
-  text-align: center;
+.footer-section .logo {
+  margin-top: 0;
+  flex:1;
+}
+
+.footer .community{
+  flex:1;
 }
 
 
 
 .footer .community input {
-  width: 80%;
+  width: 85%;
   padding: 8px;
   margin-top: 10px;
   border: none;
+  
 }
+
+.community-input-column h6{
+  margin-bottom: 0;
+}
+
 
 .community-input-column {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 100%;
   max-width: 300px; 
 }
@@ -65,9 +80,10 @@
 .community-input-column input,
 .community-input-column button {
   
-  padding: 10px;
+  padding: 5px;
   border: none;
   border-radius: 5px;
+  height:30px;
 }
 
 .community-input-column button {
@@ -76,6 +92,7 @@
   font-weight: bold;
   cursor: pointer;
   width:86%;
+  margin-top: 0;
 }
 
 .community-input-column button:hover {
@@ -88,4 +105,53 @@
   margin-top: 0;
 }
 
+.social-media{
+  display: flex;
+  gap:20px;
+}
 
+.instagram,.facebook,.twitter{
+  color: white;
+  padding:4px 8px;
+  border-radius: 5px;
+}
+
+
+.social-media a:hover{
+  color: white;
+}
+
+.facebook{
+   background-color: rgb(75, 75, 179);
+}
+
+.instagram{
+   background-color: rgb(250, 66, 152)
+}
+
+.twitter{
+  background-color: skyblue;
+}
+
+ .social-media a {
+    position: relative;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+
+  .social-media a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%; 
+    left: -50%;
+    background-color: #3a3a3a;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    font-size: 12px;
+  }
+
+  .social-media a:hover::after {
+    opacity: 1;
+  }
