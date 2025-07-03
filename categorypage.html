@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category Page</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="category_page_css.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+
+
+    <input type="radio" id="cls" hidden>
+    <div class="header1">
+      <div class="banner">
+        <p>MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW</p>
+        <div class="close-button">
+          <label class="close-btn" for="cls">x</label>
+        </div>
+      </div>
+    </div>
+
+    <header>
+
+
+      <nav class="navbar navbar-expand-lg bg-dark" style="width: 100%;">
+        <div class="sidenav1" style="display: flex;width: 1200px;">
+          <div class="sidenav">
+            <div class="container-fluid justify-content-end">
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                   <li class="nav-item">
+                    <a class="nav-link text-white" href="homepage.html">
+                      <i class="fa-solid fa-house"></i> Home
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                      <i class="bi bi-heart-fill"></i> Wish List
+                    </a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                      <i class="bi bi-person-fill"></i> My Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="signin.html"> Sign in</a></li>
+                      <li><a class="dropdown-item" href="register.html"> Register</a></li>
+                      <li><a class="dropdown-item" href=""> My Orders</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                      <i class="bi bi-telephone-fill"></i> Contact
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="checkout.html">
+                      <i class="bi bi-cart-check"></i> Checkout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="header-container">
+        <div class="subheader">
+          <div class="logo">
+            <a href="homepage.html"><img src="./images/logoreduced.jpg" alt="logo" width="120px" height="120px"></a>
+          </div>
+          <div class="browse-category">
+            <div class="dropdown">
+              <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-list"></i> Browse Category
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="categorypage.html">Art & Photography</a></li>
+                <li><a class="dropdown-item" href="categorypage.html">Biography</a></li>
+                <li><a class="dropdown-item" href="categorypage.html">Business & Money</a></li>
+                <li><a class="dropdown-item" href="categorypage.html">Children's Books</a></li>
+                <li><a class="dropdown-item" href="categorypage.html">Comics</a></li>
+                <li><a class="dropdown-item" href="categorypage.html">Cookbooks</a></li>
+                <li><a class="dropdown-item" href="categorypage.html">+ More Categories</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="search-bar">
+            <input type="text" placeholder="Search here...">
+            <button type="submit">Search</button>
+          </div>
+
+          <div class="sign-in">
+            <div class="sign-in-register">
+              <a id="sign-in-link" href="signin.html">Sign in</a>
+              <p>or <a id="register-link" href="register.html">Register</a></p>
+            </div>
+          </div>
+
+          <div class="cart">
+            <div class="cart-container">
+              <!-- Cart Icon/Button -->
+              <button class="cart-button">
+                <i class="bi bi-cart-fill"></i>
+                Shopping <br> Cart <span class="badge bg-danger"> 1 </span>
+              </button>
+
+              <!-- Cart Popup -->
+              <div class="cart-popup">
+
+                <input type="checkbox" id="hide1" hidden>
+                <div class="item-in-cart" id="item-1">
+                  <div class="cart-item-image">
+                    <img src="./images/1.webp" alt="" height="100%" width="120px">
+                  </div>
+
+                  <div class="cart-item-details">
+                    <p>A Million Little Pieces</p>
+                    <p>x1<span class="price">$9.99</span></p>
+                  </div>
+
+                  <div class="close-button">
+                    <label class="close-btn" for="hide1">x</label>
+                  </div>
+                </div>
+
+
+                <div class="item-in-cart" id="item-buttons">
+                  <button id="view-cart"><a href="cartpage.html">View Cart</a></button>
+                  <button id="checkout"><a href="checkout.html">Check Out</a></button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="container">
+        <div class="sidebar1">
+          <div class="subsidebar">
+            <div class="categories">
+              <p>Categories</p>
+              <ul class="categories-ul">
+                <li class="categories-ul-li">Featured Products</li>
+                <li class="categories-ul-li">Most viewed</li>
+                <li class="categories-ul-li">New Arrivals</li>
+                <li class="categories-ul-li">Special Offer</li>
+              </ul>
+            </div>
+            <div class="categories">
+              <p>Shop By Vendors</p>
+              <ul class="categories-ul">
+                <li class="categories-ul-li">Amazona</li>
+                <li class="categories-ul-li">Barrel Proof Press</li>
+                <li class="categories-ul-li">Little Green Works</li>
+              </ul>
+            </div>
+            <div class="categories">
+              <p>Copy</p>
+              <ul class="categories-ul">
+                <li class="categories-ul-li"><input type="checkbox"> Audio</li>
+                <li class="categories-ul-li"><input type="checkbox"> Hard</li>
+                <li class="categories-ul-li"><input type="checkbox"> Soft</li>
+              </ul>
+            </div>
+            <div class="categories">
+              <p>Type</p>
+              <ul class="categories-ul">
+                <li class="categories-ul-li"><input type="checkbox"> New</li>
+                <li class="categories-ul-li"><input type="checkbox"> Used</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sidebar2">
+            <input type="radio" name="scroll" id="rd1" checked>
+            <input type="radio" name="scroll" id="rd2">
+            <input type="radio" name="scroll" id="rd3">
+            <input type="radio" name="scroll" id="rd4">
+            <input type="radio" name="scroll" id="rd5">
+
+            <div class="slide" id="slide1">
+              
+              <div class="side-product">
+                <img src="images/1.webp" alt="A Million Little Pieces book cover">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">A Million Little Pieces - James Ferry</a></p>
+                  <div class="price-dis">
+                    <p class="price">$12.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/2.webp" alt="A WING And A PRAYER - Morano">
+                <div class="infor">
+                  <p class="company" id="LittleGreenWorks"><a href="">Little Green Works</a></p>
+                  <p class="title"><a href="productpage.html">A WING And A PRAYER - Morano</a></p>
+                  <div class="price-dis">
+                    <p class="price">$14.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/3.webp" alt="Antheplogie Amérndene - Franz">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">Antheplogie Amérndene - Franz</a></p>
+                  <div class="price-dis">
+                    <p class="price">$11.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" id="slide2">
+              <div class="side-product">
+                <img src="images/4.webp" alt="Brothers & Beasts - Bernheimer">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">Brothers & Beasts - Bernheimer</a></p>
+                  <div class="price-dis">
+                    <p class="price">$16.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/5.webp" alt="Coyoto Tales - Thomas King">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">Coyoto Tales - Thomas King</a></p>
+                  <div class="price-dis">
+                    <p class="price">$13.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/6.webp" alt="De Vengeance - J.D Kurtness">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">De Vengeance - J.D Kurtness</a></p>
+                  <div class="price-dis">
+                    <p class="price">$18.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" id="slide3">
+              <div class="side-product">
+                <img src="images/7.webp" alt="Fred The Lonely Monster - Anne">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">Fred The Lonely Monster - Anne</a></p>
+                  <div class="price-dis">
+                    <p class="price">$15.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/8.webp" alt="GREEN By Sam Graham-Flesen">
+                <div class="infor">
+                  <p class="company" id="LittleGreenWorks"><a href="">Little Green Works</a></p>
+                  <p class="title"><a href="productpage.html">GREEN By Sam Graham-Flesen</a></p>
+                  <div class="price-dis">
+                    <p class="price">$13.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/9.webp" alt="Pieces Of Light By Fernyhough">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">Pieces Of Light By Fernyhough</a></p>
+                  <div class="price-dis">
+                    <p class="price">$17.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" id="slide4">
+              <div class="side-product">
+                <img src="images/10.webp" alt="Rising Crow By K.L. Byles - Book 1">
+                <div class="infor">
+                  <p class="company" id="BarrelProofPress"><a href="">Barrel Proof Press</a></p>
+                  <p class="title"><a href="productpage.html">Rising Crow By K.L. Byles - Book 1</a></p>
+                  <div class="price-dis">
+                    <p class="price">$15.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/11.webp" alt="The Dance Of The Business Mind">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">The Dance Of The Business Mind</a></p>
+                  <div class="price-dis">
+                    <p class="price">$18.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+              <div class="side-product">
+                <img src="images/12.webp" style="margin-left: -20px;" alt="The Dress And The Girl">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">The Dress And The Girl</a></p>
+                  <br>
+                  <div class="price-dis">
+                    <p class="price">$16.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" id="slide5">
+              <div class="side-product">
+                <img src="images/13.webp" alt="When The Doves Disappeared">
+                <div class="infor">
+                  <p class="company" id="Amazona"><a href="">Amazona</a></p>
+                  <p class="title"><a href="productpage.html">When The Doves Disappeared</a></p>
+                  <div class="price-dis">
+                    <p class="price">$15.99</p>
+                    <p class="mrp"><s>$19.99</s></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="side2radio">
+              <label for="rd1" class="dotscroll"></label>
+              <label for="rd2" class="dotscroll"></label>
+              <label for="rd3" class="dotscroll"></label>
+              <label for="rd4" class="dotscroll"></label>
+              <label for="rd5" class="dotscroll"></label>
+            </div>
+          </div>
+        </div>
+
+        <div id="product-listing">
+          <input type="radio" id="grid3x4" class="gridcontrol" name="layout" checked>
+          <input type="radio" id="grid4x3" class="gridcontrol" name="layout">
+
+          <input type="radio" name="checkgrid" class="prod-grid" id="prod-grid1" checked>
+          <input type="radio" name="checkgrid" class="prod-grid" id="prod-grid2">
+
+          <div class="toolbar" id="toolbartop">
+            <h2>PRODUCTS</h2>
+            <div class="toolbarnav">
+
+              <div class="grid-buttons">
+
+                <label for="grid3x4" class="grid-icon-grid-3x4" title="Display in 3x4 Grid">
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </label>
+
+                <label for="grid4x3" class="grid-icon-grid-4x3" title="Display in 4x3 Grid">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                </label>
+
+              </div>
+              <div class="pagedes" id="12pp">Showing item 1 to 12 of 13 items</div>
+              <div class="pagedes" id="1pp">Showing item 13 of 13 items</div>
+            </div>
+
+
+          </div>
+
+
+          <div class="products-grid page1" id="products-grid1">
+            <div class="product-card" id="product-card-1">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">A Million Little Pieces - James Ferry</a></p>
+              <div class="image-wrapper">
+                <img src="images/1.webp" alt="A Million Little Pieces - James Ferry">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$12.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-2">
+              <p class="company" id="LittleGreenWorks"><a href="">Little Green Works</a></p>
+              <p class="title"><a href="productpage.html">Little Green Works</a></p>
+              <div class="image-wrapper">
+                <img src="images/2.webp" alt="When The Doves Disappeared">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$14.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-3">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">Antheplogie Amérndene - Franz</a></p>
+              <div class="image-wrapper">
+                <img src="images/3.webp" alt="Antheplogie Amérndene - Franz">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$11.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-4">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">Brothers & Beasts - Bernheimer</a></p>
+              <div class="image-wrapper">
+                <img src="images/4.webp" alt="Brothers & Beasts - Bernheimer">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$16.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-5">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">Coyoto Tales - Thomas King</a></p>
+              <div class="image-wrapper">
+                <img src="images/5.webp" alt="Coyoto Tales - Thomas King">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$13.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-6">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">De Vengeance - J.D Kurtness</a></p>
+              <div class="image-wrapper">
+                <img src="images/6.webp" alt="De Vengeance - J.D Kurtness">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$18.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-7">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">Fred The Lonely Monster - Anne</a></p>
+              <div class="image-wrapper">
+                <img src="images/7.webp" alt="Fred The Lonely Monster - Anne">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$15.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-8">
+              <p class="company" id="LittleGreenWorks"><a href="">Little Green Works</a></p>
+              <p class="title"><a href="productpage.html">GREEN By Sam Graham-Flesen</a></p>
+              <div class="image-wrapper">
+                <img src="images/8.webp" alt="GREEN By Sam Graham-Flesen">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$13.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-9">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">Pieces Of Light By Fernyhough</a></p>
+              <div class="image-wrapper">
+                <img src="images/9.webp" alt="Pieces Of Light By Fernyhough">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$17.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-10">
+              <p class="company" id="BarrelProofPress"><a href="">Barrel Proof Press</a></p>
+              <p class="title"><a href="productpage.html">Rising Crow By K.L. Byles - Book 1</a></p>
+              <div class="image-wrapper">
+                <img src="images/10.webp" alt="Rising Crow By K.L. Byles - Book 1">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$15.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-11">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">The Dance Of The Business Mind</a></p>
+              <div class="image-wrapper">
+                <img src="images/11.webp" alt="The Dance Of The Business Mind">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$18.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+            <div class="product-card" id="product-card-12">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">The Dress And The Girl</a></p>
+              <div class="image-wrapper">
+                <img src="images/12.webp" alt="The Dress And The Girl">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$16.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+          </div>
+          <div class="products-grid page2" id="products-grid2">
+            <div class="product-card" id="product-card-1">
+              <p class="company" id="Amazona"><a href="">Amazona</a></p>
+              <p class="title"><a href="productpage.html">When The Doves Disappeared</a></p>
+              <div class="image-wrapper">
+                <img src="images/13.webp" alt="When The Doves Disappeared">
+                <div class="actionbar">
+                  <i class="fa-solid fa-cart-shopping" data-tooltip="Cart"></i>
+                  <i class="fa-solid fa-heart" data-tooltip="Add to favorite"></i>
+                  <i class="fa-solid fa-eye" data-tooltip="View details"></i>
+                  <i class="fa-solid fa-share" data-tooltip="Share"></i>
+                  <div class="quantity-wrapper" data-tooltip="Quantity">
+                    <span class="qty-btn">−</span>
+                    <input type="text" value="0" min="0" class="qtyinput" disabled>
+                    <span class="qty-btn">+</span>
+                  </div>
+                </div>
+              </div>
+              <div class="price-dis">
+                <p class="price">$15.99</p>
+                <p class="mrp"><s>$19.99</s></p>
+                <p class="disc">-50%</p>
+              </div>
+            </div>
+          </div>
+          <div class="pagination-container">
+            <label for="prod-grid1" class="lab-prod-grid1">1</label>
+            <label for="prod-grid2" class="lab-prod-grid1">2</label>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+
+        <div class="footer-section logo">
+          <img src="images/log-dark.jpg" alt="logo" width="200" />
+        </div>
+
+        <div class="footer-section">
+          <h4>SUPPORT</h4>
+          <ul>
+            <li><a href="#">Order Track</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Desk</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>POLICIES</h4>
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Exchange Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section community">
+          <h4 id="reading-community">JOIN OUR READING COMMUNITY</h4>
+          <div class="community-input-column">
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+            <div class="stay connect d-flex">
+              STAY CONNECTED
+            </div>
+            <div class="social-media">
+              <a href="#" class="instagram" data-tooltip="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="facebook" data-tooltip="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="twitter" data-tooltip="Twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
