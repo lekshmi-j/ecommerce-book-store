@@ -20,23 +20,15 @@
 
 <body>
 
+<!-- Sale Banner -->
+<header>
+  <div class="banner">
+    <p>MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW</p>
+  </div>
+</header>
 
-
-  <header>
-    <div class="banner">
-    <p>
-      MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”. SHOP NOW
-      <!-- <label for="cross" class="close-button">×</label> -->
-    </p>
-    </div>
-  </header>
-
-
+<!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg bg-dark">
-<!-- 
-  <div class="nav-logo">
-    <img src="./images/logoblack.png" alt="" height="50px" width="50px">
-  </div> -->
   <div class="container-fluid justify-content-end">
     
     <!-- Hamburger Button -->
@@ -47,239 +39,222 @@
    
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav">
+        <!-- Home -->
         <li class="nav-item">
-                    <a class="nav-link text-white" href="homepage.html">
-                      <i class="fa-solid fa-house"></i> Home
-                    </a>
-                  </li>
+          <a class="nav-link text-white" href="homepage.html">
+              <i class="fa-solid fa-house"></i> Home
+          </a>
+        </li>
+        <!-- Wishlist -->
         <li class="nav-item">
           <a class="nav-link text-white" href="#">
             <i class="bi bi-heart-fill"></i> Wish List
           </a>
         </li>
-
+        <!-- Account -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
             <i class="bi bi-person-fill"></i> My Account
           </a>
+          <!-- Account dropdown -->
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="signin.html"> Sign in</a></li>
             <li><a class="dropdown-item" href="register.html"> Register</a></li>
             <li><a class="dropdown-item" href="#"> My Orders</a></li>
           </ul>
         </li>
-
+        <!-- Contact -->
         <li class="nav-item">
           <a class="nav-link text-white" href="#">
             <i class="bi bi-telephone-fill"></i> Contact
           </a>
         </li>
-
+        <!-- Checkout -->
         <li class="nav-item">
           <a class="nav-link text-white" href="checkout.html">
             <i class="bi bi-cart-check"></i> Checkout
           </a>
         </li>
       </ul>
-    </div>
-    
+    </div>  
   </div>
 </nav>
   
+<!-- Subheader -->
+<div class="subheader">
+  <!-- Logo -->
+  <div class="logo">
+    <a href="homepage.html"><img src="./images/logo.png" alt="logo" width="120px" height="120px"></a>
+  </div>
 
-    <div class="subheader">
+  <!-- Browsw Category -->
+  <div class="browse-category">
+    <div class="dropdown">
+      <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-list"></i> Browse Category
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="categorypage.html">Art & Photography</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Biography</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Business & Money</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Children's Books</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Comics</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">Cookbooks</a></li>
+        <li><a class="dropdown-item" href="categorypage.html">+ More Categories</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search here...">
+    <button type="submit">Search</button>
+  </div>
+  <!-- Sign in Register Link -->
+  <div class="sign-in">
+    <div class="sign-in-register">
+      <a id="sign-in-link" href="signin.html">Sign in</a>
+      <p>or <a id="register-link" href="register.html">Register</a></p>
+    </div>
+  </div>
 
-      <div class="logo">
-        <a href="homepage.html"><img src="./images/logo.png" alt="logo" width="200px" height="200px"></a>
+  <!-- Shopping Cart -->
+  <div class="cart">
+    <div class="cart-container">
+      <button class="cart-button" >
+        <i class="bi bi-cart-fill"></i>Shopping <br> Cart <span class="badge bg-danger"> 2 </span>
+      </button>
+
+      <!-- Cart Popup -->
+      <div class="cart-popup">
+
+        <!-- Item-1 -->
+        <input type="checkbox" id="hide1" hidden>
+        <div class="item-in-cart" id="item-1">
+          <div class="cart-item-image">
+            <img src="./images/millionlittle.png" alt="" height="100%" width="120%">
+          </div>
+            
+          <div class="cart-item-details">
+            <p>A Million Little Pieces</p>
+            <p>x1<span class="price">$9.99</span></p>
+          </div>
+
+          <div class="close-button">
+            <label class="close-btn" for="hide1">x</label>
+          </div>
+        </div>
+
+        <!-- Item-2 -->
+        <input type="checkbox" id="hide2" hidden>
+        <div class="item-in-cart" id="item-2">
+          <div class="cart-item-image">
+            <img src="./images/kiterunner.png" alt="" height="100%" width="120%">
+          </div>
+            
+          <div class="cart-item-details">
+            <p>Kite Runner</p>
+            <p>x1<span class="price">$9.99</span></p>
+          </div>
+
+          <div class="close-button">
+            <label class="close-btn" for="hide2">x</label>
+          </div>
+        </div>
+        <!-- Checkou Button in Cart Popup -->
+        <div class="item-in-cart" id="item-buttons">
+          <a href="cartpage.html"><button id="view-cart">View Cart</button></a>
+          <a href="checkout.html"><button id="checkout">Check Out</button></a>
+        </div>
       </div>
-
-      <div class="browse-category">
-        <div class="dropdown">
-          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-list"></i> Browse Category
-            </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="categorypage.html">Art & Photography</a></li>
-            <li><a class="dropdown-item" href="categorypage.html">Biography</a></li>
-            <li><a class="dropdown-item" href="categorypage.html">Business & Money</a></li>
-            <li><a class="dropdown-item" href="categorypage.html">Children's Books</a></li>
-            <li><a class="dropdown-item" href="categorypage.html">Comics</a></li>
-            <li><a class="dropdown-item" href="categorypage.html">Cookbooks</a></li>
-            <li><a class="dropdown-item" href="categorypage.html">+ More Categories</a></li>
-          </ul>
+    </div>
   </div>
-  </div>
-
-<div class="search-bar">
-  <input type="text" placeholder="Search here...">
-  <button type="submit">Search</button>
 </div>
 
-      <div class="sign-in">
-        <div class="sign-in-register">
-          <a id="sign-in-link" href="signin.html">Sign in</a>
-          <p>or <a id="register-link" href="register.html">Register</a></p>
-        </div>
+<!-- Home->Bookname -->
+<div class="home-bookname">
+  <a href="homepage.html">Home</a>
+  <span class="separator">></span>
+  <a id="book-name" href="#">Kite Runner</a>
+</div>
+
+<!--Product container-->
+<section class="product-container">
+
+  <!-- Product image -->
+  <div class="book-front-image">
+      <img src="./images/kiterunner.png" alt="book front image" class="shadow-img">
+  </div>
+  <!-- Product details -->
+  <div class="book-details">
+      <h2>Kite Runner</h2>
+      <!-- Brand Availability pid -->
+      <div class="availability">
+        <p>Brand: <span class="colored" id>Amarzona</span></p>
+        <p>Availability: <span class="colored" >In Stock</span></p>
+        <p>Product Id: <span class="colored">123</span></p>
       </div>
 
-    <div class="cart">
-      <div class="cart-container">
-        <!-- Cart Icon/Button -->
-        <button class="cart-button" >
-         <i class="bi bi-cart-fill"></i>
-          Shopping <br> Cart <span class="badge bg-danger"> 2 </span>
-        </button>
-
-        <!-- Cart Popup -->
-        <div class="cart-popup">
-
-          <input type="checkbox" id="hide1" hidden>
-          <div class="item-in-cart" id="item-1">
-            <div class="cart-item-image">
-              <img src="./images/millionlittle.png" alt="" height="100%" width="120%">
-            </div>
-              
-            <div class="cart-item-details">
-              <p>A Million Little Pieces</p>
-              <p>x1<span class="price">$9.99</span></p>
-            </div>
-
-            <div class="close-button">
-              <label class="close-btn" for="hide1">x</label>
-            </div>
-          </div>
-
-
-         
-          <input type="checkbox" id="hide2" hidden>
-          <div class="item-in-cart" id="item-2">
-            <div class="cart-item-image">
-              <img src="./images/kiterunner.png" alt="" height="100%" width="120%">
-            </div>
-              
-            <div class="cart-item-details">
-              <p>Kite Runner</p>
-              <p>x1<span class="price">$9.99</span></p>
-            </div>
-
-            <div class="close-button">
-              <label class="close-btn" for="hide2">x</label>
-            </div>
-          </div>
-
-         
-         
-
-          <div class="item-in-cart" id="item-buttons">
-            <a href="cartpage.html"><button id="view-cart">View Cart</button></a>
-            <a href="checkout.html"><button id="checkout">Check Out</button></a>
-          </div>
-          
-        </div>
+      <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del></span></p>
+      <div class="summary">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum accusantium sit totam expedita perferendis voluptatum modi? Natus, dignissimos ullam et, dolor omnis ducimus aliquid voluptatibus illum, vero fuga iure!</p>
+      
+      <!-- Cover type -->
+      <div class="cover-type">
+        <input type="radio" name="cover-type" id="hard" value="hard" checked>
+        <label for="hard">HARD</label>
+        <input type="radio" name="cover-type" id="soft" value="soft">
+        <label for="soft">SOFT</label>
+        <input type="radio" name="cover-type" id="audio" value="audio">
+        <label for="audio">AUDIO</label>
       </div>
+      <!-- Add to Cart Buy now buttons -->
+      <div class="add-to-cart-buy-now">
+        <p>Qty: <span class="quantity">1</span>
+            <a href="cartpage.html"><button>+ Add to Cart</button></a>  
+            <a href="checkout.html"><button>+ Buy now</button></a>
+        </p> 
+      </div>
+      <!-- Wishlist link -->
+      <div class="wishlist">
+        <a href="#""><i class="bi bi-heart-fill"></i> Add to wishlist</a>
+      </div>
+
     </div>
+  </div> 
+</section>
+
+<!-- Description Review -->
+<section class="description-review">
+
+  <input type="radio" id="description" name="tab" checked>
+  <input type="radio" id="review" name="tab">
+
+  <div class="tab-heading">
+      <label for="description"><h4>DESCRIPTION</h4></label>  
+      <label for="review"><h4>REVIEW</h4></label> 
   </div>
 
 
-    <!-- Home->Bookname -->
-    <div class="home-bookname">
-      <a href="homepage.html">Home</a>
-      <span class="separator">></span>
-      <a id="book-name" href="#">Kite Runner</a>
-    </div>
+  <div class="dr-tab-contents" id="description-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis praesentium expedita earum blanditiis sint perspiciatis. Dolorum sint et corrupti atque quidem, facilis magnam corporis, fugit adipisci voluptate explicabo dolor aut iure? Et rem voluptatibus hic assumenda, esse quod recusandae reiciendis optio sint dignissimos dolorem harum aspernatur ex nihil explicabo maxime ipsum voluptatum autem commodi fugiat ad! Libero nihil esse facere incidunt iusto ea possimus fuga dolorem totam voluptates ullam inventore unde, obcaecati aspernatur quibusdam? Eum dolor placeat magnam ut natus possimus animi nemo excepturi. Quibusdam repudiandae unde esse quos nihil et, aperiam odit dicta deleniti dignissimos, sed consequatur ullam, distinctio dolorum. Qui dolor dicta ex laudantium harum maiores culpa magnam labore, eligendi ducimus sint ad sequi voluptates veritatis illum quam placeat sunt. Dicta vitae temporibus rem maxime inventore, quo impedit esse dolor quasi repellat eligendi deserunt dolore sit, vero tempore placeat quam saepe magni iusto tenetur? Accusantium, fugiat recusandae.
+  </div>
 
-
-
-    <!-- Bookimage,bookdetails,add to cart button buy now -->
-    <section class="product-container">
-      <div class="book-front-image">
-            <img src="./images/kiterunner.png" alt="book front image" class="shadow-img">
-        </div>
-        
-        <div class="book-details">
-            <h2>Kite Runner</h2>
-            <div class="availability">
-              <p>Brand: <span class="colored" id>Amarzona</span></p>
-              <p>Availability: <span class="colored" >In Stock</span></p>
-              <p>Product Id: <span class="colored">123</span></p>
-            </div>
-             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del></span></p>
-             <div class="summary">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus harum accusantium sit totam expedita perferendis voluptatum modi? Natus, dignissimos ullam et, dolor omnis ducimus aliquid voluptatibus illum, vero fuga iure!</p>
-              
-              <div class="cover-type">
-                <input type="radio" name="cover-type" id="hard" value="hard" checked>
-                <label for="hard">HARD</label>
-                <input type="radio" name="cover-type" id="soft" value="soft">
-                <label for="soft">SOFT</label>
-                <input type="radio" name="cover-type" id="audio" value="audio">
-                <label for="audio">AUDIO</label>
-              </div>
-
-              <div class="add-to-cart-buy-now">
-                <p>Qty: <span class="quantity">1</span>
-                    <button>+ Add to Cart</button>  
-                    <button>+ Buy now</button>
-                 </p> 
-                
-              </div>
-              <div class="wishlist">
-                <a href="#""><i class="bi bi-heart-fill"></i> Add to wishlist</a>
-              </div>
-             </div>
-
-        </div> 
-        
-         <!-- <div class="book-side-images">
-          <h1>side</h1>
-         </div> -->
-
-    </section>
-
-
-
-    <section class="description-review">
-
-      <input type="radio" id="description" name="tab" checked>
-      <input type="radio" id="review" name="tab">
-
-      <div class="tab-heading">
-          <label for="description"><h4>DESCRIPTION</h4></label>  
-          
-          <label for="review"><h4>REVIEW</h4></label> 
-      </div>
-
-
-      <div class="dr-tab-contents" id="description-content">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis praesentium expedita earum blanditiis sint perspiciatis. Dolorum sint et corrupti atque quidem, facilis magnam corporis, fugit adipisci voluptate explicabo dolor aut iure? Et rem voluptatibus hic assumenda, esse quod recusandae reiciendis optio sint dignissimos dolorem harum aspernatur ex nihil explicabo maxime ipsum voluptatum autem commodi fugiat ad! Libero nihil esse facere incidunt iusto ea possimus fuga dolorem totam voluptates ullam inventore unde, obcaecati aspernatur quibusdam? Eum dolor placeat magnam ut natus possimus animi nemo excepturi. Quibusdam repudiandae unde esse quos nihil et, aperiam odit dicta deleniti dignissimos, sed consequatur ullam, distinctio dolorum. Qui dolor dicta ex laudantium harum maiores culpa magnam labore, eligendi ducimus sint ad sequi voluptates veritatis illum quam placeat sunt. Dicta vitae temporibus rem maxime inventore, quo impedit esse dolor quasi repellat eligendi deserunt dolore sit, vero tempore placeat quam saepe magni iusto tenetur? Accusantium, fugiat recusandae.
-      </div>
-
-      <div class="dr-tab-contents" id="review-content">
-        <h5>Customer Reviews</h5>
-        <p>Based on 2 reviews<span><a href="#"> Write a review</a></span></p>
-      </div>
-
- 
-
-
-    </section>
+  <div class="dr-tab-contents" id="review-content">
+    <h5>Customer Reviews</h5>
+    <p>Based on 2 reviews<span><a href="#"> Write a review</a></span></p>
+  </div>
+</section>
    
-    
-
-
-
-
-
+<!-- Related Products -->
 <section class="related-products">
-    <h4>RELATED PRODUCTS</h4>
-    
-
+  <h4>RELATED PRODUCTS</h4>
+  <!-- Carousel Active slide -->
   <div id="relatedCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-
-     
       <div class="carousel-item active">
+  
         <div class="book-list ">
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">Fred The Lonely Monster - Anne</p>
@@ -313,6 +288,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">De Vengeance - J.D Kurtness</p>
@@ -329,6 +305,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">Coyote Tale - Thomas King</p>
@@ -345,10 +322,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
         </div>
       </div>
 
-      
+      <!-- Carousel slide 2 -->
       <div class="carousel-item">
         <div class="book-list">
           <div class="book-card">
@@ -367,6 +345,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">Brothers & Beasts - Bernheimer</p>
@@ -383,6 +362,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">When The Doves Disappeared</p>
@@ -399,6 +379,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">A Million Little Pieces - James Frey</p>
@@ -415,70 +396,75 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
         </div>
       </div>
-
     </div>
 
-     
-  
+     <!-- Carousel Buttons -->
     <button class="carousel-control-prev" type="button" data-bs-target="#relatedCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" style="background-color: rgb(193, 193, 193); border-radius: 10px;padding: 20px;"></span>
     </button>
+
     <button class="carousel-control-next" type="button" data-bs-target="#relatedCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" style="background-color: rgb(193, 193, 193); border-radius: 10px;padding: 20px;"></span>
     </button>
-  </div>
-  </section>
 
+  </div>
+</section>
+
+<!-- Quick View Pop up -->
 <section class="quickview-modal">
-    <div class="modal fade" id="quick-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="quick-view" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-       
-        
-         
-      <div class="modal-body">
-         <div class="quickview">
-          <div class="qvimage">
-            <img src="./images/annefrank.png" alt="book-image" height="100%" width="100%">
-          </div>
-          <div class="qvcontents">
-            
-            <div class="book-title-price">
-              <h5>The Diary of a Young Girl-Anne Frank</h5>
-              <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del></span></p>
-              <a href="#">See all features</a>
+      <div class="modal-content">  
+        <div class="modal-body">
+          <div class="quickview">
+
+            <!-- Quick view image -->
+            <div class="qvimage">
+              <img src="./images/annefrank.png" alt="book-image" height="100%" width="100%">
             </div>
-            <div class="add-to-cart">
-              <input type="number" name="number" id="book-quantity">
-              <button class="add-button">Add to cart</button>
+            <!-- Quick View contents -->
+            <div class="qvcontents">
+
+              <div class="book-title-price">
+                <h5>The Diary of a Young Girl-Anne Frank</h5>
+                <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del></span></p>
+                <a href="#">See all features</a>
+              </div>
+
+              <div class="add-to-cart">
+                <input type="number" name="number" id="book-quantity">
+                <button class="add-button">Add to cart</button>
+              </div>
+              <hr>
+              
+              <div class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odit doloremque voluptas aspernatur debitis asperiores reiciendis optio quo obcaecati laborum veniam deleniti odio placeat, beatae sit, libero sequi distinctio sint!</div>
             </div>
-            <hr>
-            <div class="book-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat odit doloremque voluptas aspernatur debitis asperiores reiciendis optio quo obcaecati laborum veniam deleniti odio placeat, beatae sit, libero sequi distinctio sint!</div>
-          </div>
-          <div class="close-button">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <!-- Close Button -->
+            <div class="close-button">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div> 
+ 
           </div>
         </div>
-      </div>
-      
-
-      </div>
-     
+      </div>   
     </div>
   </div>
 </section>
 
- <section class="recently-viewed">
+<!-- Recently Viewed Products -->
+<section class="recently-viewed">
   <h4>RECENTLY VIEWED PRODUCTS</h4>
 
+  <!-- Carousel -->
   <div id="recentlyCarousel" class="carousel slide" data-bs-ride="carousel">
      <div class="carousel-inner">
-
-     
       <div class="carousel-item active">
         <div class="book-list ">
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">The Diary of a Young Girl - Anne Frank</p>
@@ -495,6 +481,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">A Million Little Pieces - James Frey</p>
@@ -511,6 +498,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
          <div class="book-card">
             <p class="store">Amazona</p>
             <p class="title">Rising Crow BY K.L Byles - Book 1</p>
@@ -547,9 +535,10 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
         </div>
       </div>
 
-      
+      <!--Carousel Slide 2  -->
       <div class="carousel-item">
         <div class="book-list">
+
          <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">Kite Runner - Khaled Hosseini</p>
@@ -566,6 +555,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">De Vengeance - J.D Kurtness</p>
@@ -582,6 +572,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
           <div class="book-card"> 
             <p class="store">Amazona</p>
             <p class="title">Coyote Tale - Thomas King</p>
@@ -598,6 +589,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
            <div class="book-card">
             <p class="store">Amazona</p>
             <p class="title">Rising Crow BY K.L Byles - Book 1</p>
@@ -614,14 +606,11 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
             </div>
             <p class="price"><span class="new">$9.99</span> <span class="old"><del>$19.99</del> <span class="discount">-50%</span></span></p>
           </div>
+
         </div>
       </div>
-
     </div>
-
-
-     
-  
+    <!-- Carousel Buttons -->
     <button class="carousel-control-prev" type="button" data-bs-target="#recentlyCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" style="background-color: rgb(193, 193, 193); border-radius: 10px;padding: 20px;"></span>
     </button>
@@ -631,12 +620,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
   </div>
 </section>
 
-
+<!-- Footer -->
 <footer class="footer">
+  <!-- Logo -->
   <div class="footer-section logo">
     <img src="./images/logoblack.png" alt="logo" height="100%" width="80%" />
   </div>
 
+  <!-- Support -->
   <div class="footer-section">
     <h6>SUPPORT</h6>
     <ul>
@@ -646,7 +637,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
       <li><a href="#">Help Desk</a></li>
     </ul>
   </div>
-
+  <!-- Policies -->
   <div class="footer-section">
     <h6>POLICIES</h6>
     <ul>
@@ -657,7 +648,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
     </ul>
   </div>
 
- <div class="footer-section community">
+<!-- Community -->
+<div class="footer-section community">
   <h6 id="reading-community">JOIN OUR READING COMMUNITY</h6>
   <div class="community-input-column">
     <input type="email" placeholder="Enter your email" />
@@ -665,6 +657,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
     <div class="stay connect d-flex">
       STAY CONNECTED
     </div>
+    <!-- Social Media -->
    <div class="social-media">
       <a href="#" class="instagram" data-tooltip="Instagram"><i class="bi bi-instagram"></i></a>
       <a href="#" class="facebook" data-tooltip="Facebook"><i class="bi bi-facebook"></i></a>
@@ -672,14 +665,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis prae
     </div>
   </div>
 </div>
-
-
-
 </footer>
-
-
-
-
 
 </body>
 </html>
